@@ -1,0 +1,126 @@
+*
+	box-sizing: border-box
+
+body, h1
+	margin: 0
+	padding: 0
+
+#navbar
+	display: flex
+	justify-content: space-between
+	padding: 10px 20px
+
+	background: #006185
+
+	#navbar-logo
+		font-family: "Cabin", sans-serif
+		font-weight: bold
+		font-size: 32px
+		text-decoration: none
+		color: #f2f3f4
+
+	#navbar-links
+		display: inline-flex
+		align-items: center
+	
+		a
+			margin: 0 10px
+	
+			font-family: "Roboto", sans-serif
+			text-decoration: none
+			color: #f2f3f4
+	
+			&:nth-child(3)
+				margin-right: 0px
+	
+#page-lead
+	margin: 20px 0 0 20px
+
+	font-family: Segoe UI, sans-serif
+	font-weight: 400
+	font-size: 40px
+	color: #555
+
+#recent-polls
+	display: flex
+	margin-top: 20px
+
+	.poll
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		height: 200px
+		flex: 1
+	
+		background: #cb3a48
+	
+		font-family: Segoe UI, sans-serif
+	
+		transition: all 0.3s ease-in-out
+	
+		&:hover
+			background: #C52E3C
+	
+		.poll-title
+			font-size: 20px
+			color: #f2f3f4
+	
+		.poll-link
+			font-size: 14px
+			text-decoration: none
+			color: #ccc
+	
+			transition: all 0.3s ease-in-out
+	
+			&:hover
+				color: #eee
+	
+#statistics
+	display: flex
+
+	background: #eee
+			
+	.statistics-column
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		flex: 1
+		height: 400px
+		
+		font-family: Segoe UI, sans-serif
+	
+		.statistics-lead
+			color: #999
+	
+		.statistics-number
+			font-weight: 300
+	
+		.statistics-category
+			color: #cb3a48
+	
+#random-poll
+	display: block
+	width: 300px
+	height: 50px
+	margin: calc(147px / 2) auto 0
+
+	background: #006185
+
+	font-family: Segoe UI, sans-serif
+	font-size: 20px
+	text-align: center
+	text-decoration: none
+	line-height: 50px
+	color: #f2f3f4
+
+	border: none
+	border-radius: 30px
+
+	transition: all 0.3s ease-in-out
+	cursor: pointer
+	outline: none
+
+	&:hover
+		background: #004D6A

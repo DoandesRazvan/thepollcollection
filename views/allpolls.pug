@@ -1,0 +1,21 @@
+doctype html
+html
+	head
+		title The Poll Collection
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin|Roboto")
+		link(rel="stylesheet" href="/css/allpolls.css")
+	body
+		include ./partials/_navbar
+		
+		h1#page-lead All polls
+		
+		hr
+		
+		#allpolls-flex-container
+			if polls.length > 0
+				each poll, index in polls
+					.poll
+						p.poll-title #{poll.title}
+						a(href="/polls/" + poll._id).poll-link View poll &#187;
+			else
+				h4 No polls created yet.

@@ -1,0 +1,50 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body, h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  position: relative; }
+
+#cover {
+  height: 85vh;
+  background-image: url("/img/hands.jpg");
+  background-size: cover; }
+
+footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 15vh;
+  padding: 0 20px;
+  background: #006185; }
+  footer #logo {
+    font-family: "Cabin", sans-serif;
+    font-size: 30px;
+    color: white; }
+    footer #logo #logo-tagline {
+      font-family: "Open Sans Condensed", sans-serif;
+      font-size: 24px;
+      font-weight: 300;
+      letter-spacing: 0.5px; }
+  footer #enter-site {
+    font-family: Segoe UI, sans-serif;
+    color: #eee;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    footer #enter-site:hover {
+      color: #fff; }

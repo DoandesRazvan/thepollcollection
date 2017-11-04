@@ -1,0 +1,13 @@
+#navbar
+	a(href="/home")#navbar-logo TPC
+	
+	#navbar-links
+		if user
+			a(href="/polls/newpoll") Create new poll
+			a(href="/users/dashboard") Dashboard
+			a(href="/users/logout") Log out
+			
+		else
+			a(href="/users/login") Login
+			a(href="/users/register") Register
+			

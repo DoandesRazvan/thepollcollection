@@ -1,0 +1,25 @@
+doctype html
+html
+	head
+		title The Poll Collection
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin|Roboto")
+		link(rel="stylesheet" href="/css/login.css")
+	body
+		include ./partials/_navbar
+		
+		h1#page-lead Login page
+		
+		hr 
+		
+		#login-flex-container
+			include ./partials/_messages
+			
+			form(action="/users/login", method="POST")#login-form
+				.form-group
+					label(for="username") Username
+					input(type="text" name="username" required)
+				.form-group
+					label(for="password") Password
+					input(type="password" name="password" required)
+					
+				input(type="submit", value="Login")

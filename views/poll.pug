@@ -1,0 +1,38 @@
+doctype html
+html
+	head
+		title The Poll Collection
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin|Roboto")
+		link(rel="stylesheet" href="/css/poll.css")
+	body
+		include ./partials/_navbar
+		
+		h1#page-lead #{title}
+		
+		hr
+		
+		#poll-flex-container
+			#poll-vote
+				include ./partials/_messages
+				
+				form(action="/polls/" + pollId + "?_method=PUT" method="POST")#dropdown-menu
+					input(type="hidden" name="_method" value="PUT")
+					#options
+						input(type="text" placeholder="Click to write your own option" name="option" required)#chosen-option
+						button(type="button")#choose-option Choose option
+						ul#dropdown-content
+							each option, index in options
+								li= option.name
+								
+					input(type="submit" value="Register your vote")#poll-vote-register
+					
+			#poll-chart-container
+				canvas#poll-chart
+					
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js")
+		script.
+			var pollOptions = !{JSON.stringify(options)},
+					chartColors = !{JSON.stringify(colors)};
+		script(src="/scripts/poll.js")
+		

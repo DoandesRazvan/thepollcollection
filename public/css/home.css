@@ -1,0 +1,156 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body, h1 {
+  margin: 0;
+  padding: 0; }
+
+#navbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #006185; }
+  #navbar #navbar-logo {
+    font-family: "Cabin", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-decoration: none;
+    color: #f2f3f4; }
+  #navbar #navbar-links {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #navbar #navbar-links a {
+      margin: 0 10px;
+      font-family: "Roboto", sans-serif;
+      text-decoration: none;
+      color: #f2f3f4; }
+      #navbar #navbar-links a:nth-child(3) {
+        margin-right: 0px; }
+
+#page-lead {
+  margin: 20px 0 0 20px;
+  font-family: Segoe UI, sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #555; }
+
+#recent-polls {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px; }
+  #recent-polls .poll {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 200px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #cb3a48;
+    font-family: Segoe UI, sans-serif;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    #recent-polls .poll:hover {
+      background: #C52E3C; }
+    #recent-polls .poll .poll-title {
+      font-size: 20px;
+      color: #f2f3f4; }
+    #recent-polls .poll .poll-link {
+      font-size: 14px;
+      text-decoration: none;
+      color: #ccc;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      #recent-polls .poll .poll-link:hover {
+        color: #eee; }
+
+#statistics {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: #eee; }
+  #statistics .statistics-column {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 400px;
+    font-family: Segoe UI, sans-serif; }
+    #statistics .statistics-column .statistics-lead {
+      color: #999; }
+    #statistics .statistics-column .statistics-number {
+      font-weight: 300; }
+    #statistics .statistics-column .statistics-category {
+      color: #cb3a48; }
+
+#random-poll {
+  display: block;
+  width: 300px;
+  height: 50px;
+  margin: calc(147px / 2) auto 0;
+  background: #006185;
+  font-family: Segoe UI, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+  color: #f2f3f4;
+  border: none;
+  border-radius: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  outline: none; }
+  #random-poll:hover {
+    background: #004D6A; }

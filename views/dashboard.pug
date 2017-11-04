@@ -1,0 +1,27 @@
+doctype html
+html
+	head
+		title The Poll Collection
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin|Roboto")
+		link(rel="stylesheet" href="/css/dashboard.css")
+	body
+		include ./partials/_navbar
+		
+		h1#page-lead Welcome to your dashboard, #{user.username}!
+		
+		hr
+		
+		#dashboard-flex-container
+			include ./partials/_messages
+			
+			if polls.length > 0
+				h2 Check out the polls you've created...
+				each poll, index in polls
+					.poll
+						p.poll-title #{poll.title}
+						a(href="/polls/" + poll._id).poll-link View poll &#187;
+						form(action="/polls/" + poll._id + "?_method=DELETE", method="POST")
+							input(type="hidden", name="_method", value="DELETE")
+							input(type="submit", value="Delete poll").delete-button
+			else
+				h4 You've not created a poll yet.

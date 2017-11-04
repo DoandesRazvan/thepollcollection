@@ -1,0 +1,122 @@
+*
+	box-sizing: border-box
+
+html, body, h1
+	margin: 0
+	padding: 0
+
+hr
+	margin: 0 0 0 20px
+	width: calc(100vw - 40px)
+
+	border-color: #E4E4E4
+
+#navbar
+	display: flex
+	justify-content: space-between
+	padding: 10px 20px
+
+	background: #006185
+
+	#navbar-logo
+		font-family: "Cabin", sans-serif
+		font-weight: bold
+		font-size: 32px
+		text-decoration: none
+		color: #f2f3f4
+
+	#navbar-links
+		display: inline-flex
+		align-items: center
+	
+		a
+			margin: 0 10px
+	
+			font-family: "Roboto", sans-serif
+			text-decoration: none
+			color: #f2f3f4
+	
+			&:nth-child(3)
+				margin-right: 0px
+
+#page-lead
+	margin: 50px 20px 0 0
+	
+	font-family: Segoe UI, sans-serif
+	font-style: italic
+	font-weight: 400
+	text-align: right
+	color: #444
+
+#allpolls-flex-container
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	margin-top: 20px
+	
+	h4
+		margin-left: 20px
+		
+		font-family: Segoe UI, sans-serif
+		font-size: 24px
+		font-style: italic
+		font-weight: 400
+		color: #555
+	
+	.poll
+		display: flex
+		justify-content: center
+		flex-direction: column
+		padding: 20px
+		flex: 1
+	
+		font-family: Segoe UI, sans-serif
+	
+		transition: all 0.3s ease-in-out
+	
+		.poll-title
+			display: inline-block
+			margin: 0
+	
+			font-size: 20px
+			color: #f2f3f4
+	
+		.poll-link
+			margin-top: 20px
+			align-self: flex-start
+		
+			font-size: 14px
+			text-decoration: none
+			color: #ccc
+	
+			transition: all 0.3s ease-in-out
+	
+			&:hover
+				color: #eee
+	
+	.poll:nth-child(even)
+		background: #cb3a48
+	
+		&:hover
+			background: #AB1D2B
+		
+	.poll:nth-child(odd)
+		background: #006185
+		
+		&:hover
+			background: #004C69
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
