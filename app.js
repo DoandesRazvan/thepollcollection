@@ -9,7 +9,7 @@ const express = require('express'),
 			path = require('path'),
 			app = express();
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // loading routes
 const users = require('./routes/users');
