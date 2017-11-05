@@ -2,7 +2,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-html, body, h1 {
+body, h1 {
   margin: 0;
   padding: 0; }
 
@@ -10,6 +10,14 @@ hr {
   margin: 0 0 0 20px;
   width: calc(100vw - 40px);
   border-color: #E4E4E4; }
+
+#page-lead {
+  margin: 50px 20px 0 0;
+  font-family: Segoe UI, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  text-align: right;
+  color: #444; }
 
 #navbar {
   display: -webkit-box;
@@ -27,7 +35,7 @@ hr {
     font-weight: bold;
     font-size: 32px;
     text-decoration: none;
-    color: #f2f3f4; }
+    color: #F2F3F4; }
   #navbar #navbar-links {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -41,17 +49,19 @@ hr {
       margin: 0 10px;
       font-family: "Roboto", sans-serif;
       text-decoration: none;
-      color: #f2f3f4; }
+      color: #F2F3F4; }
       #navbar #navbar-links a:nth-child(3) {
         margin-right: 0px; }
 
-#page-lead {
-  margin: 50px 20px 0 0;
-  font-family: Segoe UI, sans-serif;
-  font-style: italic;
-  font-weight: 400;
-  text-align: right;
-  color: #444; }
+.poll:nth-child(even) {
+  background: #CB3A48; }
+  .poll:nth-child(even):hover {
+    background: #AB1D2B; }
+
+.poll:nth-child(odd) {
+  background: #006185; }
+  .poll:nth-child(odd):hover {
+    background: #004C69; }
 
 #allpolls-flex-container {
   display: -webkit-box;
@@ -102,7 +112,7 @@ hr {
       display: inline-block;
       margin: 0;
       font-size: 20px;
-      color: #f2f3f4; }
+      color: #F2F3F4; }
     #allpolls-flex-container .poll .poll-link {
       margin-top: 20px;
       -webkit-align-self: flex-start;
@@ -116,11 +126,3 @@ hr {
       transition: all 0.3s ease-in-out; }
       #allpolls-flex-container .poll .poll-link:hover {
         color: #eee; }
-  #allpolls-flex-container .poll:nth-child(even) {
-    background: #cb3a48; }
-    #allpolls-flex-container .poll:nth-child(even):hover {
-      background: #AB1D2B; }
-  #allpolls-flex-container .poll:nth-child(odd) {
-    background: #006185; }
-    #allpolls-flex-container .poll:nth-child(odd):hover {
-      background: #004C69; }

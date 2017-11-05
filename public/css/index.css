@@ -6,6 +6,53 @@ body, h1 {
   margin: 0;
   padding: 0; }
 
+hr {
+  margin: 0 0 0 20px;
+  width: calc(100vw - 40px);
+  border-color: #E4E4E4; }
+
+#page-lead {
+  margin: 50px 20px 0 0;
+  font-family: Segoe UI, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  text-align: right;
+  color: #444; }
+
+#navbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #006185; }
+  #navbar #navbar-logo {
+    font-family: "Cabin", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-decoration: none;
+    color: #F2F3F4; }
+  #navbar #navbar-links {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #navbar #navbar-links a {
+      margin: 0 10px;
+      font-family: "Roboto", sans-serif;
+      text-decoration: none;
+      color: #F2F3F4; }
+      #navbar #navbar-links a:nth-child(3) {
+        margin-right: 0px; }
+
 body {
   position: relative; }
 

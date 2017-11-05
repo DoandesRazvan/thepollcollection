@@ -7,9 +7,17 @@ body, h1 {
   padding: 0; }
 
 hr {
-  margin-left: 20px;
+  margin: 0 0 0 20px;
   width: calc(100vw - 40px);
   border-color: #E4E4E4; }
+
+#page-lead {
+  margin: 50px 20px 0 0;
+  font-family: Segoe UI, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  text-align: right;
+  color: #444; }
 
 #navbar {
   display: -webkit-box;
@@ -27,7 +35,7 @@ hr {
     font-weight: bold;
     font-size: 32px;
     text-decoration: none;
-    color: #f2f3f4; }
+    color: #F2F3F4; }
   #navbar #navbar-links {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -41,17 +49,9 @@ hr {
       margin: 0 10px;
       font-family: "Roboto", sans-serif;
       text-decoration: none;
-      color: #f2f3f4; }
+      color: #F2F3F4; }
       #navbar #navbar-links a:nth-child(3) {
         margin-right: 0px; }
-
-#page-lead {
-  margin: 50px 20px 0 0;
-  font-family: Segoe UI, sans-serif;
-  font-style: italic;
-  font-weight: 400;
-  text-align: right;
-  color: #444; }
 
 .success-message, .error-message {
   width: 400px;
@@ -124,7 +124,7 @@ hr {
     #register-flex-container #register-form label {
       text-align: left;
       font-size: 22px;
-      color: #cb3a48; }
+      color: #CB3A48; }
     #register-flex-container #register-form input[type="text"], #register-flex-container #register-form input[type="email"], #register-flex-container #register-form input[type="password"] {
       width: 400px;
       height: 40px;
@@ -138,9 +138,9 @@ hr {
       width: 200px;
       height: 40px;
       margin-top: 30px;
-      background: #cb3a48;
+      background: #CB3A48;
       font-size: 18px;
-      color: #f2f3f4;
+      color: #F2F3F4;
       border: none;
       border-radius: 20px;
       -webkit-transition: all 0.3s ease-in-out;

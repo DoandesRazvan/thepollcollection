@@ -1,0 +1,99 @@
+@import '../utilities/_variables'
+@import '../utilities/_settings'
+@import '../modules/_navbar'
+@import '../modules/_alternatingpolls'
+
+#page-lead
+	margin-left: 20px
+
+	text-align: left
+
+#recent-polls
+	display: flex
+	margin-top: 20px
+
+	.poll
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		min-height: 200px
+		flex: 1
+		padding: 20px
+	
+		font-family: $lead-font
+	
+		transition: $transition
+	
+		.poll-title
+			display: inline-block
+			margin-top: 0
+		
+			font-size: 20px
+			color: $faded-white
+	
+			word-wrap: break-word
+	
+		.poll-link
+			font-size: 14px
+			text-decoration: none
+			color: #ccc
+	
+			transition: $transition
+	
+			&:hover
+				color: #eee
+	
+#statistics
+	display: flex
+
+	background: #eee
+			
+	.statistics-column
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		flex: 1
+		height: 400px
+		
+		font-family: $lead-font
+	
+		.statistics-lead
+			color: #999
+	
+		.statistics-number
+			font-weight: 300
+	
+		.statistics-category
+			color: $red
+	
+#all-polls
+	display: block
+	width: 300px
+	height: 50px
+	margin: calc(147px / 2) auto 0
+
+	background: $red
+
+	font-family: $lead-font
+	font-size: 20px
+	text-align: center
+	text-decoration: none
+	line-height: 50px
+	color: $faded-white
+
+	border: none
+	border-radius: 30px
+
+	transition: $transition
+	cursor: pointer
+	outline: none
+
+	&:hover
+		background: $dark-red
+
+@media (max-width: 1250px)
+	#recent-polls
+		flex-direction: column
+		

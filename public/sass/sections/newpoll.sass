@@ -1,0 +1,73 @@
+@import '../utilities/_variables'
+@import '../utilities/_settings'
+@import '../modules/_navbar'
+@import '../modules/_messages'
+
+#newpoll-flex-container
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+
+	#newpoll-form
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		flex-direction: column
+		height: calc(100vh - 170px)
+		padding: 20px
+
+		font-family: $lead-font
+	
+		.form-group
+			display: flex
+			flex-direction: column
+			margin-top: 60px
+	
+		label
+			text-align: left
+			font-size: 22px
+			color: $red
+
+		input[type="text"], input[type="email"], input[type="password"], textarea
+			width: 400px
+			height: 40px
+			padding: 0 10px
+
+			border: solid 1px #8E8E8E
+			border-radius: 20px
+
+			font-size: 16px
+			color: #666
+
+			outline: none
+	
+		textarea
+			height: 100px
+			padding: 10px
+	
+			font-family: $lead-font
+	
+			resize: none
+
+		input[type="submit"]
+			width: 200px
+			height: 40px
+			margin-top: 30px
+
+			background: $red
+			font-size: 18px
+			color: $faded-white
+
+			border: none
+			border-radius: 20px
+
+			transition: $transition
+			cursor: pointer
+			outline: none
+
+			&:hover
+				background: $dark-red
+	
+		div:first-child
+			margin-top: 0

@@ -8,16 +8,17 @@ html
 	body
 		include ./partials/_navbar
 		
+		h1#page-lead Check out our most recent polls...
+		
 		if polls.length > 0
-			h1#page-lead Check out our most recent polls...
-
 			#recent-polls
+
 				each value, index in polls
 					.poll
 						p.poll-title #{value.title}
 						a(href="/polls/" + value.id).poll-link View poll &#187;
 
-			a(href="/polls/all")#random-poll View all polls
+			a(href="/polls/all")#all-polls View all polls
 			
 		else
 			h1#page-lead No polls have been created yet.

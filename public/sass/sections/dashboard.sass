@@ -1,0 +1,111 @@
+@import '../utilities/_variables'
+@import '../utilities/_settings'
+@import '../modules/_navbar'
+@import '../modules/_messages'
+@import '../modules/_alternatingpolls'
+
+#dashboard-flex-container
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	
+	.success-message, .error-message
+		margin-left: 20px
+
+	h2
+		display: inline
+		flex: 1
+		margin: 25px 0 25px 20px
+	
+		font-family: $secondary-font
+		font-size: 32px
+		font-weight: 300
+		color: $red
+	
+	h4
+		margin-left: 20px
+		
+		font-family: $lead-font
+		font-size: 24px
+		font-style: italic
+		font-weight: 400
+		color: #555
+	
+	.poll
+		display: flex
+		justify-content: center
+		flex-direction: column
+		padding: 20px
+		flex: 1
+	
+		font-family: $lead-font
+	
+		transition: $transition
+	
+		.poll-title
+			display: inline-block
+			margin: 0
+	
+			font-size: 20px
+			color: $faded-white
+	
+		.poll-link
+			margin-top: 20px
+			align-self: flex-start
+		
+			font-size: 14px
+			text-decoration: none
+			color: #ccc
+	
+			transition: $transition
+	
+			&:hover
+				color: #eee
+	
+		input[type="submit"]
+			width: 100px
+			height: 40px
+			margin-top: 20px
+		
+			background: $lighter-black
+		
+			color: $faded-white
+	
+			border-radius: 20px
+			border: none
+	
+			cursor: pointer
+			transition: $transition
+			outline: none
+	
+			&:hover
+				background: #222
+				
+				color: #eee
+	
+	.poll:nth-child(even)
+		background: $red
+	
+		&:hover
+			background: $dark-red
+		
+	.poll:nth-child(odd)
+		background: $blue
+		
+		&:hover
+			background: $dark-blue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
